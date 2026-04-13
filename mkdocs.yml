@@ -1,0 +1,106 @@
+site_name: Observatório de Talentos
+site_description: Visão do Produto e Projeto - Jovem Aprendiz | Requisitos de Software 2026.1
+site_author: Katuner
+site_url: https://katuner.github.io/teste-mkdocs-req/
+
+repo_url: https://github.com/Katuner/teste-mkdocs-req
+repo_name: Katuner/teste-mkdocs-req
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt-BR
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+plugins:
+  - search:
+      lang: pt
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+      title: Nesta página
+  - attr_list
+  - md_in_html
+  - def_list
+
+nav:
+  - Início: index.md
+
+  - "1 · Cenário Atual":
+    - Visão Geral: 01-cenario-cliente/index.md
+
+  - "2 · Solução Proposta":
+    - Visão Geral: 02-solucao-proposta/index.md
+
+  - "3 · Estratégias de ESW":
+    - Visão Geral: 03-estrategias-esw/index.md
+
+  - "4 · Engenharia de Requisitos":
+    - Visão Geral: 04-engenharia-requisitos/index.md
+
+  - "5 · Cronograma":
+    - Visão Geral: 05-cronograma/index.md
+
+  - "6 · Interação Equipe/Cliente":
+    - Visão Geral: 06-interacao-equipe/index.md
+
+  - "10 · Lições Aprendidas":
+    - Visão Geral: 10-licoes-aprendidas/index.md
+
+  - "11 · Referências":
+    - Visão Geral: 11-referencias/index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Katuner/teste-mkdocs-req
+      name: Repositório no GitHub
+
+copyright: "Observatório de Talentos &mdash; Requisitos de Software 2026.1"
